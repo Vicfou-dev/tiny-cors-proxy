@@ -246,8 +246,8 @@ function getHandler(options: CorsProxyOptions, proxy: any): (req: any, res: any)
                 res.end('The URL is invalid: two slashes are needed after the http(s):.');
                 return;
             }
-            res.writeHead(200, {'Content-Type': 'text/plain'});
-            res.end('ok');
+            res.writeHead(200, cors_headers);
+            res.end();
             return;
         }
 
