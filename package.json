@@ -1,6 +1,6 @@
 {
     "name": "tiny-cors-proxy",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Cors Proxy",
     "main": "./dist/index.js",
     "module": "./dist/index.mjs",
