@@ -1,7 +1,7 @@
 {
-    "name": "youtube-video-core",
+    "name": "cors-proxy",
     "version": "1.0.0",
-    "description": "Youtube core",
+    "description": "Cors Proxy",
     "main": "./dist/index.js",
     "module": "./dist/index.mjs",
     "types": "./dist/index.d.ts",
@@ -10,12 +10,35 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/Vicfou-dev/youtube-video-core"
+        "url": "https://github.com/Vicfou-dev/cors-proxy"
     },
     "scripts": {
         "build": "tsup",
         "test": "jest"
     },
+    "keywords": [
+        "CORS",
+        "Proxy",
+        "HTTP",
+        "Middleware",
+        "Cross-Origin",
+        "Resource Sharing",
+        "HTTP Requests",
+        "Web Development",
+        "API",
+        "Node.js",
+        "Express.js",
+        "Server",
+        "Backend",
+        "Web Services",
+        "Cross-Domain",
+        "HTTP Proxy",
+        "CORS Bypass",
+        "CORS Middleware",
+        "Cross-Origin Requests",
+        "CORS Proxy Server",
+        "Cross-Origin Resource Sharing Proxy"
+      ],
     "author": "Vicfou",
     "license": "ISC",
     "devDependencies": {
