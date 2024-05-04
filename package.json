@@ -1,5 +1,5 @@
 {
-    "name": "cors-proxy",
+    "name": "tiny-cors-proxy",
     "version": "1.0.0",
     "description": "Cors Proxy",
     "main": "./dist/index.js",
@@ -10,7 +10,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/Vicfou-dev/cors-proxy"
+        "url": "https://github.com/Vicfou-dev/tiny-cors-proxy"
     },
     "scripts": {
         "build": "tsup",

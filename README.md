@@ -1,21 +1,21 @@
-# cors-proxy
+# tiny-cors-proxy
 Fork from cors-everywhere in TypeScript
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](http://opensource.org/licenses/MIT) [![image](https://shields.io/badge/TypeScript-3178C6?logo=TypeScript&logoColor=FFF&style=flat-square)](https://www.typescriptlang.org/) 
 
 ## Description
-This repository provides a cors-proxy to bypass cors
+This repository provides a tiny-cors-proxy to bypass cors
 
 ## Installation
 Run this command to install it
 ```
-npm i cors-proxy
+npm i tiny-cors-proxy
 ```
 
 ## Example
 
-Easy use for cors-proxy
+Easy use for tiny-cors-proxy
 ```js
-import corsServer from 'cors-proxy';
+import corsServer from 'tiny-cors-proxy';
 corsServer.listen(8080);
 ```
 
@@ -28,7 +28,7 @@ const response = await fetch(`${server}/${domain}`, { headers: { 'x-requested-wi
 
 If you want to configure the server by your own
 ```js
-import { createServer } from 'cors-proxy';
+import { createServer } from 'tiny-cors-proxy';
 const corsServer = createServer({
     originWhitelist: [],
     requireHeader: ['origin', 'x-requested-with'],
@@ -39,7 +39,7 @@ corsServer.listen(8080);
 
 If you want to add a rate limiter for and allowed 
 ```js
-import { createServer, createRateLimitChecker } from 'cors-proxy';
+import { createServer, createRateLimitChecker } from 'tiny-cors-proxy';
 
 const limiter = createRateLimitChecker('5 1'); // 5 request per minute
 const corsServer = createServer({
