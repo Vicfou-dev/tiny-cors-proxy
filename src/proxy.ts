@@ -1,9 +1,18 @@
-import * as httpProxy from 'http-proxy';
-import * as net from 'net';
-import * as url from 'url';
-import * as http from 'http';
-import * as https from 'https';
-import { getProxyForUrl } from 'proxy-from-env';
+var net = null;
+var url = null;
+var httpProxy = null;
+var http = null;
+var https = null;
+var getProxyForUrl = null;
+
+if(typeof module !== 'undefined' && module.exports) {
+    net = require('net');
+    url = require('url');
+    httpProxy = require('http-proxy');
+    http = require('http');
+    https = require('https');
+    getProxyForUrl = require('proxy-from-env').getProxyForUrl;
+}
 
 interface Location {
     protocol: string | null;
@@ -29,7 +38,7 @@ interface CorsProxyOptions {
     maxRedirects?: number;
     originBlacklist?: string[];
     originWhitelist?: string[];
-    httpProxyOptions?: httpProxy.ServerOptions;
+    httpProxyOptions?: any;
     httpsOptions?: any;
     checkRateLimit?: (origin: string) => string | null;
     redirectSameOrigin?: boolean;
